@@ -12,6 +12,7 @@
 		227579072167A6600003E2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227579052167A6600003E2E5 /* Main.storyboard */; };
 		227579092167A6620003E2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227579082167A6620003E2E5 /* Assets.xcassets */; };
 		2275790C2167A6620003E2E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2275790A2167A6620003E2E5 /* LaunchScreen.storyboard */; };
+		EC466E5662C24C4FEA7F0D92 /* Pods_NetworkingExample_Medium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20553E5EB55C535D76DF008 /* Pods_NetworkingExample_Medium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		227579082167A6620003E2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2275790B2167A6620003E2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2275790D2167A6620003E2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F1A0212C5DD52975D03AB9 /* Pods-NetworkingExample-Medium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingExample-Medium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingExample-Medium/Pods-NetworkingExample-Medium.debug.xcconfig"; sourceTree = "<group>"; };
+		C20553E5EB55C535D76DF008 /* Pods_NetworkingExample_Medium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingExample_Medium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02522D404C59DDE07D0835A /* Pods-NetworkingExample-Medium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingExample-Medium.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingExample-Medium/Pods-NetworkingExample-Medium.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC466E5662C24C4FEA7F0D92 /* Pods_NetworkingExample_Medium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				227579002167A6600003E2E5 /* NetworkingExample-Medium */,
 				227578FF2167A6600003E2E5 /* Products */,
+				B3451D709B11EC426AD8190B /* Pods */,
+				3D5F110A1B6E89A4EF4EA5A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "NetworkingExample-Medium";
 			sourceTree = "<group>";
 		};
+		3D5F110A1B6E89A4EF4EA5A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20553E5EB55C535D76DF008 /* Pods_NetworkingExample_Medium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3451D709B11EC426AD8190B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1A0212C5DD52975D03AB9 /* Pods-NetworkingExample-Medium.debug.xcconfig */,
+				D02522D404C59DDE07D0835A /* Pods-NetworkingExample-Medium.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 227579102167A6620003E2E5 /* Build configuration list for PBXNativeTarget "NetworkingExample-Medium" */;
 			buildPhases = (
+				143B4F9734E75A4D7E8BBD3B /* [CP] Check Pods Manifest.lock */,
 				227578FA2167A6600003E2E5 /* Sources */,
 				227578FB2167A6600003E2E5 /* Frameworks */,
 				227578FC2167A6600003E2E5 /* Resources */,
+				BB4F0A8C3AED96E9AFD6B491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		143B4F9734E75A4D7E8BBD3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkingExample-Medium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4F0A8C3AED96E9AFD6B491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingExample-Medium/Pods-NetworkingExample-Medium-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingExample-Medium/Pods-NetworkingExample-Medium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		227578FA2167A6600003E2E5 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		227579112167A6620003E2E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F1A0212C5DD52975D03AB9 /* Pods-NetworkingExample-Medium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		227579122167A6620003E2E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02522D404C59DDE07D0835A /* Pods-NetworkingExample-Medium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
