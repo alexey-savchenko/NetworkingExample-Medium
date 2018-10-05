@@ -12,6 +12,14 @@
 		227579072167A6600003E2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227579052167A6600003E2E5 /* Main.storyboard */; };
 		227579092167A6620003E2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227579082167A6620003E2E5 /* Assets.xcassets */; };
 		2275790C2167A6620003E2E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2275790A2167A6620003E2E5 /* LaunchScreen.storyboard */; };
+		22DF8BF72167A9F70037764D /* XkcdAPIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8BF62167A9F70037764D /* XkcdAPIAction.swift */; };
+		22DF8BFB2167AA3A0037764D /* APIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8BF82167AA390037764D /* APIAction.swift */; };
+		22DF8BFC2167AA3A0037764D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8BF92167AA3A0037764D /* API.swift */; };
+		22DF8BFD2167AA3A0037764D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8BFA2167AA3A0037764D /* Resource.swift */; };
+		22DF8BFF2167AA4F0037764D /* Alamofire+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8BFE2167AA4F0037764D /* Alamofire+Result.swift */; };
+		22DF8C022167AC240037764D /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8C012167AC240037764D /* Comic.swift */; };
+		22DF8C052167AC830037764D /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8C042167AC830037764D /* CustomError.swift */; };
+		22DF8C072167AEE10037764D /* ComicViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF8C062167AEE10037764D /* ComicViewControllerModel.swift */; };
 		EC466E5662C24C4FEA7F0D92 /* Pods_NetworkingExample_Medium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20553E5EB55C535D76DF008 /* Pods_NetworkingExample_Medium.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +31,14 @@
 		227579082167A6620003E2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2275790B2167A6620003E2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2275790D2167A6620003E2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DF8BF62167A9F70037764D /* XkcdAPIAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XkcdAPIAction.swift; sourceTree = "<group>"; };
+		22DF8BF82167AA390037764D /* APIAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAction.swift; sourceTree = "<group>"; };
+		22DF8BF92167AA3A0037764D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		22DF8BFA2167AA3A0037764D /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		22DF8BFE2167AA4F0037764D /* Alamofire+Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Result.swift"; sourceTree = "<group>"; };
+		22DF8C012167AC240037764D /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		22DF8C042167AC830037764D /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		22DF8C062167AEE10037764D /* ComicViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewControllerModel.swift; sourceTree = "<group>"; };
 		B5F1A0212C5DD52975D03AB9 /* Pods-NetworkingExample-Medium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingExample-Medium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingExample-Medium/Pods-NetworkingExample-Medium.debug.xcconfig"; sourceTree = "<group>"; };
 		C20553E5EB55C535D76DF008 /* Pods_NetworkingExample_Medium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingExample_Medium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02522D404C59DDE07D0835A /* Pods-NetworkingExample-Medium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingExample-Medium.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingExample-Medium/Pods-NetworkingExample-Medium.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +77,8 @@
 		227579002167A6600003E2E5 /* NetworkingExample-Medium */ = {
 			isa = PBXGroup;
 			children = (
+				22DF8C032167AC780037764D /* Model */,
+				22DF8C002167AA6E0037764D /* Networking */,
 				227579012167A6600003E2E5 /* AppDelegate.swift */,
 				227579032167A6600003E2E5 /* ViewController.swift */,
 				227579052167A6600003E2E5 /* Main.storyboard */,
@@ -69,6 +87,28 @@
 				2275790D2167A6620003E2E5 /* Info.plist */,
 			);
 			path = "NetworkingExample-Medium";
+			sourceTree = "<group>";
+		};
+		22DF8C002167AA6E0037764D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				22DF8BF62167A9F70037764D /* XkcdAPIAction.swift */,
+				22DF8BF82167AA390037764D /* APIAction.swift */,
+				22DF8BFA2167AA3A0037764D /* Resource.swift */,
+				22DF8BF92167AA3A0037764D /* API.swift */,
+				22DF8BFE2167AA4F0037764D /* Alamofire+Result.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		22DF8C032167AC780037764D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22DF8C012167AC240037764D /* Comic.swift */,
+				22DF8C042167AC830037764D /* CustomError.swift */,
+				22DF8C062167AEE10037764D /* ComicViewControllerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3D5F110A1B6E89A4EF4EA5A1 /* Frameworks */ = {
@@ -208,8 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DF8C072167AEE10037764D /* ComicViewControllerModel.swift in Sources */,
+				22DF8BF72167A9F70037764D /* XkcdAPIAction.swift in Sources */,
+				22DF8C022167AC240037764D /* Comic.swift in Sources */,
 				227579042167A6600003E2E5 /* ViewController.swift in Sources */,
+				22DF8BFB2167AA3A0037764D /* APIAction.swift in Sources */,
+				22DF8BFD2167AA3A0037764D /* Resource.swift in Sources */,
+				22DF8C052167AC830037764D /* CustomError.swift in Sources */,
+				22DF8BFF2167AA4F0037764D /* Alamofire+Result.swift in Sources */,
 				227579022167A6600003E2E5 /* AppDelegate.swift in Sources */,
+				22DF8BFC2167AA3A0037764D /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
