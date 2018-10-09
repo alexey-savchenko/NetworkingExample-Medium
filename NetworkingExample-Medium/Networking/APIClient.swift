@@ -1,5 +1,5 @@
 //
-//  API.swift
+//  APIClient.swift
 //  VPN
 //
 //  Created by Alexey Savchenko on 10/3/18.
@@ -9,11 +9,11 @@
 import Foundation
 import Alamofire
 
-protocol APIProtocol {
+protocol APIClientProtocol {
   func request<T>(_ resource: Resource<T>, completion: @escaping (Result<T>) -> Void)
 }
 
-struct API: APIProtocol {
+struct APIClient: APIClientProtocol {
   func request<T>(_ resource: Resource<T>, completion: @escaping (Result<T>) -> Void) {
     Alamofire
       .request(resource.request)

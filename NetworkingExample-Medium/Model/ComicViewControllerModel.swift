@@ -11,7 +11,7 @@ import Alamofire
 
 struct ComicViewControllerModel {
   
-  private let api = API()
+  private let api: APIClientProtocol = APIClient()
   
   func getRandomComic(_ completion: @escaping (Result<Comic>) -> Void) {
     api.request(RandomComicResource(), completion: completion)
